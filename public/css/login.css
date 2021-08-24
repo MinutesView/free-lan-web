@@ -1,0 +1,117 @@
+body,
+html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #272966;
+}
+
+.item1 {
+    margin-top: -7px;
+}
+
+
+/* I have created a folder 'images' inside our 'public' folder,
+  		images folder location inside "public/images/img1.jpg".
+  */
+
+.bg-img {
+    background-image: url("https://c.pxhere.com/images/7d/21/ed588c6f9dd84ff1cf8f96100885-1450843.jpg!d");
+    height: 110%;
+    margin-top: -20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    right: 20px;
+    margin-top: 140px;
+    max-width: 400px;
+    padding: 16px;
+    background-color: white;
+}
+
+
+/* usename & password both same css property */
+
+input[type=text],
+input[type=password] {
+    width: 98%;
+    padding: 15px;
+    margin: 7px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+/* usename & password after mouse click */
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.container i {
+    width: 2%;
+    margin-left: -30px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #272966;
+    color: white;
+    padding: 16px 20px;
+    margin-bottom: 30px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+
+/* Customer Account text decoration below */
+
+a:link {
+    font-weight: bold;
+    color: #484bb6;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.nav,
+.navbar-nav,
+.two>.log {
+    color: white;
+}
+
+#position {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 20px;
+}

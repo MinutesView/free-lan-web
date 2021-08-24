@@ -1,0 +1,116 @@
+body,
+html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.sign-img {
+    background-image: url("/images/img3.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.container {
+    position: absolute;
+    right: 30%;
+    left: 30%;
+    margin-top: 5%;
+    max-width: 600px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: rgb(54, 108, 151);
+}
+
+.head {
+    margin-top: -10px;
+    margin-left: 200px;
+}
+
+.top {
+    grid-area: top;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(223, 123, 30);
+}
+
+.form {
+    grid-area: forml;
+}
+
+.button {
+    grid-area: buttonr;
+    /* 
+    position: absolute;
+    right: 30%; */
+    background-color: rgb(255, 255, 255);
+    padding-top: 40%;
+    padding-bottom: 40%;
+    font-weight: bold;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.log {
+    background-color: #272966;
+    padding: 10px;
+    color: white;
+}
+
+.mygrid {
+    position: absolute;
+    right: 30%;
+    left: 30%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-areas: 'top top' 'forml buttonr';
+    grid-gap: 10px;
+    max-width: 600px;
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* All input type using same css property (other input type "text" except password) */
+
+input[type=text],
+input[type=password] {
+    width: 60%;
+    padding: 15px;
+    margin: 7px 7px 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.uname {
+    margin-right: 21px;
+}
+
+
+/* All input type using same css property (other input type "text" except password) */
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.mygrid i {
+    width: 2%;
+    margin-left: -30px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: white;
+}

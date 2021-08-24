@@ -1,0 +1,224 @@
+.sidebarMain {
+    width: 20%;
+    text-align: center;
+    background-color: #f1f1f1;
+    position: fixed;
+    font-weight: bold;
+    height: 100%;
+    display: block;
+    overflow: auto;
+}
+
+.sidebarMain a {
+    display: block;
+    margin-top: 20px;
+    color: black;
+    width: 100%;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.margin-r {
+    margin-right: 300px;
+}
+
+.sidebarMain a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.sidebarMain a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.mr-r {
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+.drop {
+    float: right;
+    margin-left: -20px;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.container {
+    position: relative;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+.mySlides>img {
+    height: 400px;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    margin-right: 15px;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.mid-body {
+    width: 90%;
+    margin-left: -50px;
+}
+
+.mid-right {
+    float: right;
+    width: 25%;
+    margin-right: -100px;
+}
+
+
+/* Six columns side by side */
+
+.column {
+    float: left;
+    width: 18.4%;
+    margin-left: 10px;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
+    opacity: 0.6;
+    height: 80px;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.title-main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.description-main {
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 700px) {
+    .sticky-top-main {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 200px;
+        z-index: 1020;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sidebarMain {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebarMain a {
+        float: left;
+    }
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebarMain a {
+        text-align: center;
+        float: none;
+    }
+    .margin-r {
+        margin-right: 220px;
+    }
+    .form-control {
+        width: 250px;
+    }
+    .mid-right {
+        width: 90%;
+        float: left;
+    }
+    .mySlides>img {
+        height: auto;
+        margin: auto;
+    }
+    .mid-body {
+        width: 90%;
+        margin-left: 0px;
+    }
+}
